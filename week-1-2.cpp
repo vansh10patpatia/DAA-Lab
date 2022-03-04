@@ -19,6 +19,7 @@ int main()
                 count++;
                 if(a[j] == number){
                     found=1;
+                    break;
                 }
             }
         }

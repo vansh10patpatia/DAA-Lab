@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int n,size,number; //no. of textcases and size of array and number to be searched
+    int n,size,number; //no. of textcases , size of array and number to be searched
     int i,j;
     int found = 0;
     cin>>n;

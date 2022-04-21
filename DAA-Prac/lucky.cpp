@@ -1,26 +1,21 @@
 // C++ program for Lucky Numbers
-// #include <bits/stdc++.h>
-#include <iostream>
-#include <cstdio>
-#include <cstdlib>
+#include <bits/stdc++.h>
 using namespace std;
 #define bool int
 
-/* Returns 1 if n is a lucky no.
-otherwise returns 0*/
 bool isLucky(int n)
 {
 	static int counter = 2;
 	
-	if(counter > n)
+	if(counter > n){
+        // cout<<"n"<<n<<"counter"<<counter<<"\n";
 		return 1;
-	if(n % counter == 0)
+    }
+	if(n % counter == 0){
+        // cout<<"n"<<n<<"counter"<<counter<<"\n";
 		return 0;
+    }
 	
-	/*calculate next position of input no.
-	Variable "next_position" is just for
-	readability of the program we can
-	remove it and update in "n" only */
 	int next_position = n - (n/counter);
 	
 	counter++;

@@ -1,0 +1,1 @@
+//magic number question C++

@@ -16,10 +16,10 @@ bool isLucky(int n)
 		return 0;
     }
 	
-	int next_position = n - (n/counter);
+	n = n - (n/counter);
 	
 	counter++;
-	return isLucky(next_position);
+	return isLucky(n);
 }
 
 // Driver Code
